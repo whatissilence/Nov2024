@@ -1,0 +1,11 @@
+/*html {*/
+/*    color: darkblue;*/
+/*}*/
+
+p.ref {
+    color: forestgreen !important;
+}
+
+p.ref {
+    color: red;
+}

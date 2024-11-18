@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 2</title>
+  </head>
+  <body>
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contacts.html">Contacts</a>
+  <a href="other/deep/archive.html">Archive</a>
+
+  <h1>Контакти</h1>
+
+  <div>
+    <form action="https://google.com/search" method="get">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="q">
+      <input type="submit" value="Надіслати">
+    </form>
+  </div>
+<br>
+<br>
+<br>
+<br>
+
+  <form action="/index.html" method="get">
+    <div>
+      <fieldset>
+        <legend>Legend</legend>
+
+        <div>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="firstName">
+        </div>
+
+        <div>
+          <label for="emailField">Електронна пошта:</label>
+          <input type="email" id="emailField" name="email">
+        </div>
+
+        Password:
+        <input type="password" name="password">
+
+        <input type="checkbox" name="subscribe" value="yes"> Підписатися на новини
+        <input type="number" name="quantity" min="-50" max="10">
+        <input type="date" name="birthday">
+      </fieldset>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="radio" name="gender" value="male"> Чоловік
+  <input type="radio" name="gender" value="female"> Жінка
+  <input type="radio" name="gender2" value="male"> Чоловік2
+  <input type="radio" name="gender2" value="female"> Жінка2
+
+
+    <label for="message">Ваш коментар:</label>
+    <textarea id="message" name="message" rows="4" cols="50">
+Текст за замовчуванням, який буде в полі вводу.
+    </textarea>
+
+    <label for="fruit">Виберіть фрукт:</label>
+    <select id="fruit" name="fruit">
+      <option value="apple">Яблуко</option>
+      <option value="banana">Банан</option>
+      <option value="orange">Апельсин</option>
+    </select>
+
+
+    <input type="submit" value="Надіслати">
+
+    <button type="submit">Надіслати BUTTON</button>
+    <button type="reset">Скинути</button>
+  </form>
+
+  <button type="button" onclick="alert('Привіт!')">Натисніть мене</button>
+
+
+
+  </body>
+</html>

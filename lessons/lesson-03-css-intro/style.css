@@ -1,0 +1,74 @@
+body {
+    background-color: lightblue;
+}
+/* example of attributes */
+/*[type="password"] {
+    border: 2px dashed green;
+}*/
+
+input[name="repeat-password"] {
+    border: 1px solid red;
+}
+
+#my-div {
+    border: 3px dashed yellowgreen;
+}
+
+.error {
+    color: red;
+}
+
+.advertisement {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+}
+
+/* ============================ */
+html {
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+div {
+    font-size: 0.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/* ========================= */
+.colored {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: white;
+    width: 200px;
+    height: 200px;
+    background-color: #cc12bd;
+    text-align: center;
+
+    font: italic 20px Verdana, Tahoma, sans-serif;
+}
+
+.colored span {
+    vertical-align: middle;
+}
+
+.paragraph {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.paragraph a {
+    text-decoration: none;
+}
+
+.custom-list {
+    list-style-type: circle;
+    /*list-style-position: inside;*/
+}

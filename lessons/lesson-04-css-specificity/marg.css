@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mar {
+  /*margin-top: 20px;*/
+  /*margin-right: 50px;*/
+  /*margin-bottom: 20px;*/
+  /*margin-left: 50px;*/
+
+  /*margin: 20px 50px;*/
+  /*margin: 20px;*/
+  /*margin: 10px 30px 70px 100px;*/
+
+  padding: 30px;
+  background-color: lightgreen;
+  border: 1px solid red;
+
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+
+  border-radius: 20px;
+  border-right-color: #cc12bd;
+
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+
+
+

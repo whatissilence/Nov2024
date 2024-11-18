@@ -1,0 +1,82 @@
+/*.container a ~ p {*/
+/*  font-style: italic;*/
+/*}*/
+
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.special {
+  font-style: italic;
+  color: green;
+}
+
+.special a {
+  color: inherit;
+}
+
+h2 + a.selected-link {
+  color: violet;
+  text-decoration: underline;
+}
+
+a[href$=".jpg"] {
+  text-decoration: none;
+  color: deeppink !important;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+input:focus {
+  background-color: lightgreen;
+}
+
+li:first-child {
+  background-color: #cc12bd;
+}
+
+li:last-child {
+  background-color: lightskyblue;
+}
+
+/*li:nth-child(odd) {*/
+/*li:nth-child(even) {*/
+/*li:nth-child(2n-1) {*/
+li:nth-child(4n) {
+  background-color: lightcoral;
+}
+
+p:first-of-type {
+  background-color: yellow;
+}
+
+p::first-letter {
+  font-size: 2.5rem;
+  color: red;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: '♥ ';
+  color: red;
+  font-size: 0.8em;
+
+}
+
+ul li:hover::after {
+  content: ' ↞';
+  color: blue;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+ul li:hover {
+  font-weight: bold;
+}
