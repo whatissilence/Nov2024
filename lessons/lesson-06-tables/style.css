@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Edu Australia';
+  src: url("fonts/edu.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Beautiful';
+  src: url("fonts/edu2.ttf") format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 20px;
+}
+
+.container {
+  /*max-width: 800px; !* Максимальна ширина контейнера *!*/
+  /*margin-left: auto; !* Автоматичний відступ зліва для центрування *!*/
+  /*margin-right: auto; !* Автоматичний відступ справа для центрування *!*/
+  /*padding: 20px;*/
+
+  width: min(100% - 40px, 800px); /* Ширина контейнера з максимальним обмеженням 1340px */
+  margin-inline: auto; /* Автоматичний відступ з обох боків для центрування */
+
+  background-color: aliceblue;
+}
+
+p {
+  margin-top: 20px;
+  font-family: 'Edu Australia', sans-serif;
+}
+
+.beauty {
+  margin-top: 30px;
+  border: 2px solid black;
+  font-family: 'Bokor', sans-serif;
+}
+
+.setting-icon {
+  font-size: 16px;
+}
+
+
+
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btable {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.btable td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.cell33 {
+  width: 33.33%;
+}
+
+.btable.insidet {
+  width: 100%;
+  margin: 0;
+}
+
+td.table-container {
+  padding: 0;
+}
