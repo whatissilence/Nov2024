@@ -1,0 +1,74 @@
+.container {
+  border: 1px solid black;
+  margin: 20px;
+  background-color: darkgrey;
+  display: grid;
+  gap: 15px;
+  padding: 15px;
+}
+
+.item {
+  height: 50px;
+  border: 1px solid black;
+  background-color: crimson;
+  box-sizing: border-box;
+
+  /* Вирівнювання цифр в блоку */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.left-right {
+  grid-template-columns: 100px 1fr 100px;
+}
+
+.col3 {
+  grid-column: 3;
+}
+
+.col4 {
+  grid-column: 4;
+}
+
+.left1-right3 {
+  grid-template-columns: 100px 1fr repeat(3, 100px);
+}
+
+.left2-right2 {
+  grid-template-columns: 100px 100px 1fr 100px 100px;
+}
+
+.right-with-big {
+  grid-template-columns: 1fr 100px 100px;
+  grid-template-rows: repeat(auto-fill, 50px);
+  grid-template-areas:
+  ". big small-top"
+  ". big small-bottom";
+}
+
+.big {
+  grid-area: big;
+  height: auto;
+}
+
+.small-top {
+  grid-area: small-top;
+}
+
+.small-bottom {
+  grid-area: small-bottom;
+}
+
+.center-with-big {
+  grid-template-columns: 1fr 150px 150px 1fr;
+  grid-template-rows: repeat(auto-fill, 50px);
+  grid-template-areas:
+  ". big small-top ."
+  ". big small-bottom .";
+}
+
+
+
+
