@@ -1,0 +1,151 @@
+:root {
+  --main-color: #34547A;
+  --secondary-color: #EEEFF1;
+
+  --main-text-color: #727272;
+  --text-letter-spacing: 0.1em;
+  --text-light-color: white;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  min-width: 1150px;
+}
+
+.container {
+  min-width: 1150px;
+  padding-inline: 20px;
+  margin-inline: auto;
+  padding-block: 100px;
+}
+
+.header {
+  background-color: var(--secondary-color);
+}
+
+.header .container {
+  padding-block: 0 141px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: var(--main-text-color);
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  max-width: 540px;
+}
+
+.description h1 {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.navbar__list {
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 80px;
+  display: flex;
+  gap: 42px;
+}
+
+.navbar__item {
+  list-style-type: none;
+}
+
+.navbar__item a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: var(--text-letter-spacing);
+}
+
+.navbar__item a:hover {
+  color: #34547A;
+}
+
+.description__about {
+  margin: 0;
+  padding-bottom: 65px;
+}
+
+.description__button {
+  color: var(--text-light-color);
+  background-color: var(--main-color);
+  border: 0;
+  letter-spacing: var(--text-letter-spacing);
+  text-transform: uppercase;
+  padding-inline: 41px;
+  padding-block: 25px 20px;
+}
+
+.light-block {
+  width: 540px;
+  margin-inline: auto;
+}
+
+.light-block__header{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-block: 12px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.light-block__text {
+  margin: 0;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.dark-container {
+  background-color: var(--main-color);
+  color: var(--text-light-color);
+}
+
+.works {
+  display: flex;
+  gap: 49px;
+}
+
+.works__item {
+  width: 141px;
+  height: 50px;
+  background: left no-repeat url("../assets/project.svg");
+  padding-left: 70px;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.works__projects {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.working__text {
+  padding-bottom: 50px;
+}
+
+.copyright {
+  padding-block: 50px;
+}
+
+.copyright__header {
+  font-size: 21px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.copyright__sign {
+  font-size: 13px;
+  font-weight: 300;
+}
