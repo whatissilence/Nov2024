@@ -1,0 +1,143 @@
+.container {
+  background-color: #ffdddd;
+}
+
+.help-me {
+  width: 100px;
+  height: 100px;
+  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 2s;
+}
+
+.container:hover .help-me {
+  font-size: 2em;
+  font-weight: bold;
+  /*width: 500px;*/
+  background-color: orange;
+  margin-left: 500px;
+}
+/*============================*/
+.catch {
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  position: absolute;
+  top: 150px;
+  transition: all 0.5s;
+}
+
+.catch:hover {
+  top: 120px;
+}
+/*============================*/
+
+
+.container-mover {
+  background-color: lightblue;
+  margin-top: 150px;
+}
+
+.move-me {
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 5s cubic-bezier(0.04, 1.52, 0.91, -0.6);
+  /*transition: all 5s steps(5) 5s;*/
+
+}
+
+.container-mover:hover .move-me {
+  margin-left: 500px;
+}
+
+
+/*============================*/
+
+.ent-container {
+  background-color: lightgreen;
+  /*margin-top: 100px;*/
+}
+
+.entertain-me {
+  width: 100px;
+  height: 100px;
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /*transition: margin-left 2s, transform 3s ease 2s;*/
+  transition: all 2s;
+}
+
+.ent-container:hover .entertain-me {
+  /*transform: rotate(90deg) translate(+200px, 100px);*/
+  /*margin-left: 500px;*/
+  /*transform: skewY(30deg);*/
+  transform: rotateY(180deg) rotateX(45deg);
+}
+
+/*============================*/
+
+.new-container {
+  background-color: lightpink;
+  margin-top: 100px;
+}
+
+.new-me {
+  width: 100px;
+  height: 100px;
+  background-color: darkviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-container .new-me {
+  animation-name: purple-yellow;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; Чотне число, щоб воно поверталося */
+  /*animation: purple 3s ease infinite alternate;*/
+  animation-fill-mode: forwards;
+}
+
+.new-container:hover .new-me {
+  animation-play-state: paused;
+}
+
+@keyframes purple-yellow {
+  0% {
+    margin-left: 0;
+    background-color: darkviolet;
+    color: white;
+  }
+
+  25% {
+    margin-left: 200px;
+    background-color: white;
+    color: black;
+  }
+
+  100% {
+    /*margin-left: calc(100% + 50px);*/
+    margin-left: 600px;
+    background-color: yellow;
+    color: black;
+  }
+}
