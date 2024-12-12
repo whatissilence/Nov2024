@@ -1,0 +1,85 @@
+@use "common";
+@use "normalize";
+
+$primary-color: #4caf50;
+$error-color: #ff4500;
+$primary-font: Verdana, Tahoma, sans-serif;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $primary-color;
+  font-family: $primary-font;
+}
+
+@mixin universal-padding($padding) {
+  padding: calc($padding / 2) $padding;
+}
+
+.button {
+  @include universal-padding(10px); // Використання міксина з параметром
+  background-color: blue;
+  color: white;
+}
+
+%alert {
+  @include universal-padding(20px); // Той самий міксин, але з іншим параметром
+  background-color: red;
+  color: white;
+}
+
+.message {
+  border: 1px solid black;
+  width: 200px;
+  height: 400px;
+  background-color: $primary-color;
+}
+
+.error-message {
+  @extend .message;
+  @extend %alert;
+  font-weight: bold;
+  background-color: $error-color;
+}
+
+//@for $i from 1 through 5 {
+//  .item#{$i} {
+//    width: 20% * $i;
+//    order: $i;
+//  }
+//}
+
+
+//
+//$colors: (reddd: #ff0000, greennn: #00ff00, blueee: #0000ff, brownn: #863f05);
+//
+//@each $name, $hex in $colors {
+//  .text-#{$name} {
+//    color: $hex;
+//  }
+//}
+
+@mixin minwidth($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content; // Вставка вмісту, переданого в міксин
+  }
+}
+
+// Цікаво, що воно ще змінить їх місцями тому що min-width спочатку йде малий
+.container {
+  width: 100%;
+
+  @include minwidth(768px) { // Передача CSS правил в міксин
+    width: 50%;
+  }
+
+  @include minwidth(300px) { // Передача CSS правил в міксин
+    width: 80%;
+  }
+}
+
+
