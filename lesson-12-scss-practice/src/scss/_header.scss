@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+/* section header */
+.header {
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid $c-bgc-head;
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+  0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
+
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  &_menu {
+    padding-left: 0;
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: flex-start;
+    margin: auto 0;
+  }
+
+  .header_ul_address {
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    margin: auto 0;
+  }
+}
