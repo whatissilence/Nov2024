@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paging {
+  @apply block p-1 px-2 border border-gray-400 text-gray-400 hover:border-black hover:text-black;
+}
