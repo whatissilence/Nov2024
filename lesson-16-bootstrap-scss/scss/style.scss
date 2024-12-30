@@ -1,0 +1,14 @@
+//$primary:       #ffa500;
+//$secondary:     lightblue;
+
+//@import "variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//@import "bootswatch.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.column-example {
+  height: 100px;
+}
