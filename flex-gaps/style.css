@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.item {
+  border: 1px solid black;
+  flex-grow: 1;
+}
+
+.item-big {
+  flex-grow: 2;
+  grid-column-start: span 2;
+}
+
+@media(max-width: 375px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .item-big {
+    grid-column-start: span 1;
+  }
+}

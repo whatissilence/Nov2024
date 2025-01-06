@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/montserrat.ttf) format('truetype');
+  }
+}
+
+* {
+  font-family: 'Montserrat', serif;
+}
+
+
+.lang {
+  @apply p-1 px-2 font-bold text-sm uppercase text-head;
+}
+
+.lang-active {
+  @apply bg-primary text-white rounded-lg;
+}
+
+.header-separator {
+  @apply pt-2 hidden md:block
+}
+
+.menu-item {
+  @apply text-nav-link font-bold;
+}
+
+.menu-item-active {
+  @apply text-primary border-primary border-b-2;
+}
