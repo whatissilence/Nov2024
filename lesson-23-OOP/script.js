@@ -69,6 +69,7 @@ console.log('===================== Classes ==========================');
 
 
 const johnAccount = new BankAccount('John Doe', 1000);
+
 johnAccount.deposit(200);
 johnAccount.showAccountDetails();
 johnAccount.withdraw(1500);
