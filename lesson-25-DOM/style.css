@@ -1,0 +1,21 @@
+
+.hidden {
+  display: none;
+}
+
+.success-text {
+  color: green;
+}
+
+.strange-text {
+  color: purple;
+}
+
+.darkmode {
+  background-color: dimgray;
+
+  .strange-text {
+    color: orange;
+    font-weight: bold;
+  }
+}
