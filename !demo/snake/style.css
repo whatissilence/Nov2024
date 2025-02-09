@@ -1,0 +1,21 @@
+.game-field {
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0px;
+}
+
+.game-field td {
+    border: 1px solid grey;
+    width: 20px;
+    height: 20px;
+    background-color: lightgreen;
+}
+
+.game-field td.snake {
+    background-color: firebrick;
+}
+
+.game-field td.hare {
+    background-color: beige !important;
+}

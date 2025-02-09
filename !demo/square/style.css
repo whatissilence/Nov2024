@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+}
