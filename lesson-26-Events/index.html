@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 26 Event</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clickable">
+
+<div id="test"></div>
+<input class="my-input" type="text">
+<input class="my-input" type="text">
+<input class="my-input" type="text">
+<input class="my-input" type="text">
+
+<div class="clickable">
+  <p class="clickable">
+    Lorem ipsum dolor sit amet, <strong class="clickable">consectetur adipiscing elit</strong>, sed do eiusmod tempor
+  </p>
+  <p class="disabled">
+    Lorem ipsum dolor sit amet, <strong class="">consectetur adipiscing elit</strong>, sed do eiusmod tempor
+  </p>
+  <p class="disabled">
+    Lorem ipsum dolor sit amet, <strong class="">consectetur adipiscing elit</strong>, sed do eiusmod tempor
+  </p>
+  <p class="disabled">
+    Lorem ipsum dolor sit amet, <strong class="">consectetur adipiscing elit</strong>, sed do eiusmod tempor
+  </p>
+</div>
+
+<div id="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <p>
+    sdddsfsdf
+  </p>
+  <p>
+    sdddsfsdf
+  </p>
+  <p>
+    sdddsfsdf
+  </p>
+  <p>
+    sdddsfsdf
+  </p>
+</div>
+<a id="link" href="http://google.com">Google.com</a>
+
+<form id="messageForm" action="http://www.google.com" method="get">
+  <table>
+    <tr>
+      <td>Від кого</td>
+      <td>
+        <input name="from" type="text">
+      </td>
+    </tr>
+    <tr>
+      <td>Ваш пароль</td>
+      <td>
+        <input name="password" type="password">
+      </td>
+    </tr>
+    <tr>
+      <td>Повторіть пароль</td>
+      <td>
+        <input name="password2" type="password">
+      </td>
+    </tr>
+    <tr>
+      <td>Куди</td>
+      <td>
+        <select name="to">
+          <option></option>
+          <option value="1">Відділ постачання</option>
+          <option value="2">Відділ розробки</option>
+          <option value="3">Директору</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  Повідомлення:
+  <label>
+    <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
+  </label>
+
+  <button id="checkAndSend">Перевірити</button>
+</form>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

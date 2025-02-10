@@ -1,0 +1,75 @@
+#test {
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+}
+
+div.clickable {
+  height: 300px;
+  border: 1px solid black;
+}
+
+.disabled {
+  color: darkgray;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container * {
+  user-select: none;
+}
+
+#container div {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+td select,
+td input {
+  width: 150px;
+}
+
+label {
+  display: block;
+}
+
+.error input,
+.error textarea {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+}
+
+#cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkgray;
+}
+
+#cover.hidden {
+  display: none;
+}
+
+#modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 400px;
+  height: 300px;
+  z-index: 5;
+  background-color: white;
+}
