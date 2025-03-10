@@ -1,39 +1,31 @@
-
 const API_KEY = 'c7eae938';
 const BASE_URL = 'https://www.omdbapi.com/';
 
-const searchButtonElement = document.getElementById('searchButton');
 const searchTextElement = document.getElementById('searchText');
 const movieContainerElement = document.getElementById('movieContainer');
 const errorContainerElement = document.getElementById('errorContainer');
 
-// const formElement = document.getElementById('movieForm');
-// formElement.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   console.log('submited', searchTextElement.value);
-// })
+searchTextElement.addEventListener('input', debounce(onTextInput, 500))
 
-// Приклад як відправити декілька запросів паралельно (тобто обробити кілька промісів паралельно)
-// const [foundMovie, movieById] = await Promise.all([
-//   findMovie(searchTextElement.value),
-//   getMovieById('tt0330373')
-// ]);
-//
-// console.log('foundMovie', foundMovie);
-// console.log('movieById', movieById);
-
-
-searchButtonElement.addEventListener('click', async () => {
+async function onTextInput() {
   movieContainerElement.innerHTML = '';
   errorContainerElement.innerHTML = '';
+
+  const searchString = searchTextElement.value.trim();
+
+  if (!searchString) {
+    errorContainerElement.innerHTML = 'Search string is empty';
+    return;
+  }
+
   try {
     const found = await findMovie(searchTextElement.value);
     movieContainerElement.innerHTML = found.map(movie => getHtmlForMovie(movie)).join('');
-  
+
   } catch (error) {
     errorContainerElement.innerHTML = error.message;
   }
-})
+}
 
 
 async function findMovie(searchKey) {
@@ -67,6 +59,37 @@ function getHtmlForMovie(movieData) {
   `;
 }
 
+function debounce(callback, wait) {
+  let timer;
+  return function(...args) {
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    timer = setTimeout(() => {
+      clearTimeout(timer);
+      callback(...args);
+    }, wait);
+  }
+}
+
+
+
+// const formElement = document.getElementById('movieForm');
+// formElement.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   console.log('submited', searchTextElement.value);
+// })
+
+
+// Приклад як відправити декілька запросів паралельно (тобто обробити кілька промісів паралельно)
+// const [foundMovie, movieById] = await Promise.all([
+//   findMovie(searchTextElement.value),
+//   getMovieById('tt0330373')
+// ]);
+//
+// console.log('foundMovie', foundMovie);
+// console.log('movieById', movieById);
 
 
 // async function getMovieById(id) {
