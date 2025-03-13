@@ -4,8 +4,8 @@ const cssnano = require('cssnano');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const fileinclude = require('gulp-file-include');
-// const mqpacker = require('css-mqpacker')
-// const sortCSSmq = require('sort-css-media-queries')
+const mqpacker = require('css-mqpacker');
+const sortCSSmq = require('sort-css-media-queries');
 
 const PATH = {
   scssSource: './src/**/*.scss',
@@ -17,7 +17,7 @@ const PATH = {
 
 const browserSync = require('browser-sync').create();
 const plugins = [
-  // mqpacker({ sort: sortCSSmq }),
+  mqpacker({ sort: sortCSSmq }),
   cssnano({ preset: 'default' })
 ]
 
