@@ -1,0 +1,28 @@
+@use "fonts";
+
+$skyColor: lightblue;
+$textColor: black;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $textColor;
+  background-color: $skyColor;
+}
+
+.logo {
+  background-image: url('../assets/icon-square-big.png');
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.some-img {
+  width: 30px;
+}
+
+.container h1 {
+  font-family: "Acme", sans-serif;
+}

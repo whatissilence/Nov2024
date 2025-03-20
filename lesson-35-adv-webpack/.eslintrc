@@ -1,0 +1,21 @@
+{
+  "ecmaFeatures": {
+    "modules": true,
+    "spread" : true,
+    "restParams" : true
+  },
+  "rules": {
+    "no-unused-vars": "warn" // Попереджуємо про змінні, які були оголошені, але не використовуються
+  },
+  "env": {
+    "es6": true, // Включаємо можливості ES6
+    "browser": true, // Вказуємо, що код виконуватиметься у браузері
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended" // Використовуємо рекомендований набір правил від ESLint
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
