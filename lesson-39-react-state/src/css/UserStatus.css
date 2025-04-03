@@ -1,0 +1,16 @@
+
+.online-sign {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-inline: 5px;
+}
+
+.online-sign.active {
+  background-color: green;
+}
+
+.online-sign.inactive {
+  background-color: red;
+}
