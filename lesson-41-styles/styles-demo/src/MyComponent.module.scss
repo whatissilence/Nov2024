@@ -1,0 +1,15 @@
+$special-background: lightcoral;
+
+.special {
+  color: white;
+  background-color: $special-background;
+}
+
+.special .test {
+  color: lightblue;
+}
+
+#myId {
+  color: red;
+  font-size: 25px;
+}
