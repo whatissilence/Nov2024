@@ -1,0 +1,33 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid green;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 15px;
+  margin: 5px;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.todoNote {
+  margin-inline: 10px;
+  color: green;
+  font-size: 20px;
+}
+
+.todoCheck {
+  font-size: 20px;
+  cursor: pointer;
+  margin-inline: 10px;
+
+  &:hover {
+    font-size: 25px;
+    color: green;
+    transition: 0.1s;
+  }
+}
