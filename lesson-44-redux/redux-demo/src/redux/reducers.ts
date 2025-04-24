@@ -1,12 +1,12 @@
-import { ActionType, CounterState, SetCounterAction } from './types.ts'
-import { Action } from '@reduxjs/toolkit'
+import { ActionType, CounterState } from './types.ts'
+import { PayloadAction } from '@reduxjs/toolkit'
 
 
 const initialState = {
   count: 0,
 }
 
-export const counterReducer = (state: CounterState = initialState, action: Action | SetCounterAction) => {
+export const counterReducer = (state: CounterState = initialState, action: PayloadAction<number>) => {
   console.log('counterReducer', state, action);
   switch (action.type) {
     case ActionType.INCREMENT:
@@ -24,7 +24,7 @@ export const counterReducer = (state: CounterState = initialState, action: Actio
 
     case ActionType.SET_COUNTER:
       return {
-        count: (action as SetCounterAction).payload
+        count: action.payload
       }
     default:
       return state;
