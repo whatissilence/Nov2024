@@ -1,0 +1,8 @@
+{
+  "name": "node-example",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main"
+  }
+}
