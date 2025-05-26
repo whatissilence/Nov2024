@@ -1,0 +1,17 @@
+JSONPlaceholder is a free online REST API that you can use whenever you need some fake data. It can be i
+n a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test t
+hings locally.JSONPlaceholder is a free online REST API that you can use whenever you need some fake data.
+It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simp
+ly to test things locally.JSONPlaceholder is a free online REST API that you can use whenever you need some
+ fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow,
+  ...or simply to test things locally.JSONPlaceholder is a free online REST API that you can use whenever y
+  ou need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on S
+  tack Overflow, ...or simply to test things locally.JSONPlaceholder is a free online REST API that you can
+   use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples
+    on Stack Overflow, ...or simply to test things locally.JSONPlaceholder is a free online REST API that yo
+    u can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox,
+    in code examples on Stack Overflow, ...or simply to test things locally.JSONPlaceholder is a free online
+     REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo
+     on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.JSONPlaceholder
+     is a free online REST API that you can use whenever you need some fake data. It can be in a README on Gi
+     tHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.

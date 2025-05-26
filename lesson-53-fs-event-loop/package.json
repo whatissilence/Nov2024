@@ -1,0 +1,8 @@
+{
+  "name": "node-fs-example",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "doit": "node index.js"
+  }
+}
