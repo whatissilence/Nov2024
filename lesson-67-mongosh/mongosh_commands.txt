@@ -1,0 +1,59 @@
+
+
+
+use db
+db.createCollection("reviews")
+db.reviews.drop()
+show collections
+
+db.persons.deleteOne({_id: new ObjectId('6875389c75385ca8da86d920')})
+
+db.persons.find({_id: ObjectId('687539c975385ca8da86d921')})
+
+
+use someDb // вибираємо не існуючу базу даних - вона буде створена при першому записі
+
+// Створить базу даних someDb, якщо її не існує і колекцію test_collection, якщо її не існує
+db.testСollection.insertOne({field: 'Strange document'})
+
+// Оновлення документа в колекції persons
+db.persons.updateOne({username: 'Bret'}, {$set: { age: 30 }})
+
+// Пошук документів у колекції movies, Шукаємо короткі смішні мультфільми
+// Виводимо тільки назви фільмів
+// За замовчуванням MongoDB повертає _id якщо ми не вкажемо інше
+db.movies.find({genres: {$all: ["Comedy", "Animation", "Short"]}}, {title: 1, _id:0})
+
+// Пошук документів у колекції movies, Шукаємо короткі смішні мультфільми, виводимо масив назв фільмів
+db.movies.find({genres: {$all: ["Comedy", "Animation", "Short"]}}, {title: 1, _id:0}).toArray().map(v => v.title)
+
+// Пошук документів у колекції movies, Шукаємо фільми, що починаються на "robot"
+db.movies.find({title: {$regex: /^robot/i}}, {title: 1, _id:0}).toArray().map(v => v.title)
+
+
+db.persons.aggregate([
+  { $match: { age: { $gt: 2 } } },
+  {
+    $group: {
+      _id: "$age",
+      count: { $sum: 1 },
+      persons: { $push: { name: "$name" } }
+    }
+  }
+])
+
+// Пошук документів у колекції persons, що мають вік більше 2 років, сортуємо за віком
+db.persons.aggregate([
+  {
+    $group: {
+      _id: "$age",
+      count: { $sum: 1 },
+      persons: { $push: { name: "$name" } }
+    },
+  },
+  {
+       $sort: { _id: 1 }
+  }
+])
+
+db.persons.findOneAndDelete({}, { sort: { age: 1 } })
